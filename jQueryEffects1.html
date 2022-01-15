@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Effects</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#div1").fadeIn();
+				$("#div2").fadeIn("slow"); /*slow yerine fast yazılabilir*/
+				$("#div3").fadeIn(3000);
+			});
+
+		});
+
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#div1").fadeOut();
+				$("#div2").fadeOut("slow"); /*slow yerine fast yazılabilir*/
+				$("#div3").fadeOut(3000);
+			});
+
+		});
+
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#div1").fadeToggle();
+				$("#div2").fadeToggle("slow"); /*slow yerine fast yazılabilir*/
+				$("#div3").fadeToggle(3000);
+			});
+
+		});
+
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#div1").fadeTo("slow",0.10);
+				$("#div2").fadeTo("slow",0.4); /*slow yerine fast yazılabilir*/
+				$("#div3").fadeTo("slow",0.7);
+			});
+
+		});
+
+
+	</script>
+</head>
+<body>
+	<button>Kutuları görmek için tıklayınız</button>
+
+	<div id="div1" style="display:none; width:80px; height:80px; background-color:red; margin:10px"></div> 
+	<div id="div2" style="display:none; width:80px; height:80px; background-color:blue; margin:10px"></div>
+	<div id="div3" style="display:none; width:80px; height:80px; background-color:green; margin:10px"></div>
+
+</body>
+</html>

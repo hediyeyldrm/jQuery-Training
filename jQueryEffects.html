@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Effects</title>
+	<script type="text/javascript" src="lib/jquery-3.6.0.slim.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#sakla").click(function(){
+				$("p").hide();
+			});
+			$("#goster").click(function(){
+				$("p").show();
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<p>Eğer sakla butonuna tıklarsan giderim, goster butonuna tıklarsan gelirim.</p>
+
+	<button id="sakla">Sakla</button>
+	<button id="goster">Goster</button>
+</body>
+</html>
